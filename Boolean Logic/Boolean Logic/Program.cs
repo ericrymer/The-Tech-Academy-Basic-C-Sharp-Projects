@@ -32,7 +32,7 @@ namespace Boolean_Logic
             //a. applicants must be over 15 years old.
             //b. applicants must not have any dui’s.
             //c. applicants must not have more than 3 speeding tickets
-            Console.WriteLine(age > 15 && HaveDui == false && SpeedingTickets <= 2);
+            Console.WriteLine(age > 15 && HaveDui == false && SpeedingTickets <= 3);
             Console.ReadLine();
         }
     }
