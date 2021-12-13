@@ -1,0 +1,6 @@
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Submission\Console App Submission\bin\Debug\Console App Submission.exe.config
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Submission\Console App Submission\bin\Debug\Console App Submission.exe
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Submission\Console App Submission\bin\Debug\Console App Submission.pdb
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Submission\Console App Submission\obj\Debug\Console App Submission.csproj.CoreCompileInputs.cache
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Submission\Console App Submission\obj\Debug\Console App Submission.exe
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Submission\Console App Submission\obj\Debug\Console App Submission.pdb
