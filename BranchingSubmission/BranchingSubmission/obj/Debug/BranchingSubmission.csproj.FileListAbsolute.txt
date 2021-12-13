@@ -1,0 +1,7 @@
+C:\Users\ericr\Desktop\Basic_C#_Programs\BranchingSubmission\BranchingSubmission\bin\Debug\BranchingSubmission.exe.config
+C:\Users\ericr\Desktop\Basic_C#_Programs\BranchingSubmission\BranchingSubmission\bin\Debug\BranchingSubmission.exe
+C:\Users\ericr\Desktop\Basic_C#_Programs\BranchingSubmission\BranchingSubmission\bin\Debug\BranchingSubmission.pdb
+C:\Users\ericr\Desktop\Basic_C#_Programs\BranchingSubmission\BranchingSubmission\obj\Debug\BranchingSubmission.csproj.AssemblyReference.cache
+C:\Users\ericr\Desktop\Basic_C#_Programs\BranchingSubmission\BranchingSubmission\obj\Debug\BranchingSubmission.csproj.CoreCompileInputs.cache
+C:\Users\ericr\Desktop\Basic_C#_Programs\BranchingSubmission\BranchingSubmission\obj\Debug\BranchingSubmission.exe
+C:\Users\ericr\Desktop\Basic_C#_Programs\BranchingSubmission\BranchingSubmission\obj\Debug\BranchingSubmission.pdb
