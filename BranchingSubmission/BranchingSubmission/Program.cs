@@ -23,6 +23,7 @@ namespace BranchingSubmission
                 Console.WriteLine("\nError: Package is too heavy to be shipped via Package Express. Have a good day.");
             }
             //else
+            else
             {
                 //Package width
                 Console.WriteLine("What is the width of the package?");
@@ -42,7 +43,7 @@ namespace BranchingSubmission
                 else
                 {
                     //Calcuate estimated total for shipping
-                    decimal totalForShipping = ((packageweight * packageheight * packagelength) * packageweight) / 100;
+                    decimal totalForShipping = ((packagewidth * packageheight * packagelength) * packageweight) / 100;
                     //The "totalForShipping" variable was given a currency format with two decimals
                     Console.WriteLine("Your estimated total for shipping this package is: $" + string.Format("{0:0.00}", totalForShipping) + " USD");
                 }
