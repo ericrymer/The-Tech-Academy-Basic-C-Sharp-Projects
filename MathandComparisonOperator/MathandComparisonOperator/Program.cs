@@ -22,7 +22,7 @@ namespace MathandComparisonOperator
             Console.WriteLine("Hours worked per week");
             int person1_HoursPerWeek = Convert.ToInt32(Console.ReadLine());
             //Calculate annual salary for Person 1
-            decimal person1_AnnualSalary = (person1_HoursPerWeek * person1_HourlyRate) * 52;
+            decimal person1_AnnualSalary = (person1_HourlyRate * person1_HoursPerWeek) * 52;
 
             //Program request for Person 2
             Console.WriteLine("Person 2");
@@ -34,7 +34,7 @@ namespace MathandComparisonOperator
             Console.WriteLine("Hours worked per week");
             int person2_HoursPerWeek = Convert.ToInt32(Console.ReadLine());
             //Calculate annual salary for Person 2
-            decimal person2_AnnualSalary = (person2_HoursPerWeek * person1_HourlyRate) * 52;
+            decimal person2_AnnualSalary = (person2_HourlyRate * person2_HoursPerWeek) * 52;
 
             //Print in console annual salarys for both Person 1 and 2.
             Console.WriteLine("Annual salary of Person 1: " + person1_AnnualSalary.ToString());
