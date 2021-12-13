@@ -1,0 +1,6 @@
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Array\Console App Array\bin\Debug\Console App Array.exe.config
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Array\Console App Array\bin\Debug\Console App Array.exe
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Array\Console App Array\bin\Debug\Console App Array.pdb
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Array\Console App Array\obj\Debug\Console App Array.csproj.CoreCompileInputs.cache
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Array\Console App Array\obj\Debug\Console App Array.exe
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Array\Console App Array\obj\Debug\Console App Array.pdb
