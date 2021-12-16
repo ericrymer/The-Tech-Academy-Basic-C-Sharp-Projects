@@ -1,0 +1,6 @@
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Strings and Integers\Console App Strings and Integers\obj\Debug\Console App Strings and Integers.csproj.CoreCompileInputs.cache
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Strings and Integers\Console App Strings and Integers\bin\Debug\Console App Strings and Integers.exe.config
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Strings and Integers\Console App Strings and Integers\bin\Debug\Console App Strings and Integers.exe
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Strings and Integers\Console App Strings and Integers\bin\Debug\Console App Strings and Integers.pdb
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Strings and Integers\Console App Strings and Integers\obj\Debug\Console App Strings and Integers.exe
+C:\Users\ericr\Desktop\Basic_C#_Programs\Console App Strings and Integers\Console App Strings and Integers\obj\Debug\Console App Strings and Integers.pdb
