@@ -27,10 +27,10 @@ namespace CallingMethods
             Console.WriteLine("The number " + mathOperations.secondnumber + " / " + number + " is equal to " + mathOperations.Division(number));
         }
             //If there is any exception, catch that exception
-            catch (Exception x)
+            catch (Exception e)
             {
                 //print a message error with the exception on the console
-                Console.WriteLine("Error !!!! -> " + x.Message);
+                Console.WriteLine("Error !!!! -> " + e.Message);
             }
             finally
             {
