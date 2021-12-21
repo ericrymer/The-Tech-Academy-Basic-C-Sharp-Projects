@@ -1,0 +1,7 @@
+C:\Users\ericr\source\repos\Operators Submission\Operators Submission\bin\Debug\Operators Submission.exe.config
+C:\Users\ericr\source\repos\Operators Submission\Operators Submission\bin\Debug\Operators Submission.exe
+C:\Users\ericr\source\repos\Operators Submission\Operators Submission\bin\Debug\Operators Submission.pdb
+C:\Users\ericr\source\repos\Operators Submission\Operators Submission\obj\Debug\Operators Submission.csproj.AssemblyReference.cache
+C:\Users\ericr\source\repos\Operators Submission\Operators Submission\obj\Debug\Operators Submission.csproj.CoreCompileInputs.cache
+C:\Users\ericr\source\repos\Operators Submission\Operators Submission\obj\Debug\Operators Submission.exe
+C:\Users\ericr\source\repos\Operators Submission\Operators Submission\obj\Debug\Operators Submission.pdb
