@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Rymer Car Insurance</h1>
+        <p class="lead">Discount price everyday.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <h3>
+            @Html.ActionLink("Get A Quote Today!", "Create", "Insuree")
+        </h3>
+
+    </div>
+    <div class="col-md">
+        <h2>Learn More About Us</h2>
+        <h3>@Html.ActionLink("Click Here!", "About", "Home")</h3>
+    </div>
+
+</div>
