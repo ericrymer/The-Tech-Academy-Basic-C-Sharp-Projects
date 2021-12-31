@@ -10,5 +10,3 @@ C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\obj\Deb
 C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\obj\Debug\StudentDatabase.csproj.CopyComplete
 C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\obj\Debug\StudentDatabase.exe
 C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\obj\Debug\StudentDatabase.pdb
-C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\obj\Debug\StudentDatabase.Migrations.InitialCreate.resources
-C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\obj\Debug\StudentDatabase.csproj.GenerateResource.cache

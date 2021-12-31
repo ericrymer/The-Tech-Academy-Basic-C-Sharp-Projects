@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace StudentDatabase
 {
@@ -10,7 +11,7 @@ namespace StudentDatabase
     {
         static void Main(string[] args)
         {
-            using (var ctx = new SchoolContext())
+            using (var ctx = new StudentDatabase())
             {
                 var stud = new Student() { FirstName = "Eric", LastName = "Rymer" };
 
