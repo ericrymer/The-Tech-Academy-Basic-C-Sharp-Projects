@@ -1,0 +1,14 @@
+C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\bin\Debug\StudentDatabase.exe.config
+C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\bin\Debug\StudentDatabase.exe
+C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\bin\Debug\StudentDatabase.pdb
+C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\bin\Debug\EntityFramework.dll
+C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\bin\Debug\EntityFramework.xml
+C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\obj\Debug\StudentDatabase.csproj.AssemblyReference.cache
+C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\obj\Debug\StudentDatabase.csproj.CoreCompileInputs.cache
+C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\obj\Debug\StudentDatabase.csproj.CopyComplete
+C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\obj\Debug\StudentDatabase.exe
+C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\obj\Debug\StudentDatabase.pdb
+C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\obj\Debug\StudentDatabase.Migrations.InitialCreate.resources
+C:\Users\ericr\Desktop\Basic_C#_Programs\StudentDatabase\StudentDatabase\obj\Debug\StudentDatabase.csproj.GenerateResource.cache
