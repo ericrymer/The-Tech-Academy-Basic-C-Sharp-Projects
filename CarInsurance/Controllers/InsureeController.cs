@@ -42,17 +42,17 @@ namespace CarInsurance.Controllers
         }
 
         // POST: Insuree/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType")] Insuree insuree)
+        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
         {
             if (ModelState.IsValid)
             {
+                Quote(insuree);
                 db.Insurees.Add(insuree);
                 db.SaveChanges();
-                CalcQuote(insuree.Id);
                 return RedirectToAction("Index");
             }
 
@@ -75,7 +75,7 @@ namespace CarInsurance.Controllers
         }
 
         // POST: Insuree/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -83,6 +83,7 @@ namespace CarInsurance.Controllers
         {
             if (ModelState.IsValid)
             {
+                Quote(insuree);
                 db.Entry(insuree).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -125,64 +126,63 @@ namespace CarInsurance.Controllers
             base.Dispose(disposing);
         }
 
-        //Calculate Insurance Quote
-        public ActionResult CalcQuote(int Id)
+        //Calculates an Insurance quote from User Inputs
+        public ActionResult Quote(Insuree insuree)
         {
-            using (InsuranceEntities db = new InsuranceEntities())
+            //Base quote:
+            decimal quote = 50.00m;
+            //calculate age:
+            int age = 0;
+            age = DateTime.Now.Year - insuree.DateOfBirth.Year;
+            if (DateTime.Now.DayOfYear < insuree.DateOfBirth.DayOfYear)
             {
-                var insuree = db.Insurees.Find(Id);
-                var dateOfBirth = insuree.DateOfBirth;
-                var carYear = insuree.CarYear;
-                var carModel = insuree.CarModel;
-                var carMake = insuree.CarMake;
-                var speedingTickets = insuree.SpeedingTickets;
-                var dui = insuree.DUI;
-                var coverageType = insuree.CoverageType;
-
-                var monthlyInsuraneQuote = 50.0m;
-
-                if (dateOfBirth.Year >= 2003)
-                {
-                    monthlyInsuraneQuote = monthlyInsuraneQuote + 100.0m;
-                }
-                else if (dateOfBirth.Year <= 2011 && dateOfBirth.Year >= 1996)
-                {
-                    monthlyInsuraneQuote = monthlyInsuraneQuote + 50.0m;
-                }
-                else if (dateOfBirth.Year < 1996)
-                {
-                    monthlyInsuraneQuote = monthlyInsuraneQuote + 25.0m;
-                }
-                if (carYear < 2000)
-                {
-                    monthlyInsuraneQuote = monthlyInsuraneQuote + 25.0m;
-                }
-                else if (carYear > 2015)
-                {
-                    monthlyInsuraneQuote = monthlyInsuraneQuote + 25.0m;
-                }
-                if (carMake.ToLower() == "porsche")
-                {
-                    monthlyInsuraneQuote = monthlyInsuraneQuote + 25.0m;
-                    if (carModel.ToLower() == "911 carerra")
-                    {
-                        monthlyInsuraneQuote = monthlyInsuraneQuote + 25.0m;
-                    }
-                }
-                monthlyInsuraneQuote = monthlyInsuraneQuote + (speedingTickets * 10);
-
-                if (dui == true)
-                {
-                    monthlyInsuraneQuote = monthlyInsuraneQuote + (monthlyInsuraneQuote * 0.25m);
-                }
-                if (coverageType == true)
-                {
-                    monthlyInsuraneQuote = monthlyInsuraneQuote + (monthlyInsuraneQuote * 0.50m);
-                }
-                insuree.Quote = monthlyInsuraneQuote;
-                db.SaveChanges();
+                age = age - 1;
             }
-            return View("Index");
+
+            if (age < 18)
+            {
+                quote += 100.00m;
+            }
+            if (age >= 19 && age <= 25)
+            {
+                quote += 50.00m;
+            }
+            if (age < 25)
+            {
+                quote += 25.00m;
+            }
+            if (insuree.CarYear < 2000)
+            {
+                quote += 25.0m;
+            }
+            if (insuree.CarYear > 2015)
+            {
+                quote += 25.0m;
+            }
+            if (insuree.CarMake == "Porsche")
+            {
+                quote += 25.0m;
+            }
+            if (insuree.CarMake == "Porsche" && insuree.CarModel == "911 Carrera")
+            {
+                quote += 25.0m;
+            }
+            quote += (insuree.SpeedingTickets * 10.0m);
+            if (insuree.DUI == true)
+            {
+                quote *= 1.25m;
+            }
+            if (insuree.CoverageType == true)
+            {
+                quote *= 1.5m;
+            }
+            insuree.Quote = quote;
+            return View(insuree);
+        }
+        // GET: Admin
+        public ActionResult Admin()
+        {
+            return View(db.Insurees.ToList());
         }
     }
 }
